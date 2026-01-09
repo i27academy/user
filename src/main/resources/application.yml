@@ -32,9 +32,9 @@ spring:
     activate:
       on-profile: dev
   datasource:
-    password: Gcp@db2024 # cipher
-    url: jdbc:mysql://private_ip:3306/learnerCrownClothing?useSSL=FALSE
-    username: db_user
+    password: Gcp@2024 # cipher
+    url: jdbc:mysql://104.197.94.65:3306/learnerCrownClothing?useSSL=FALSE
+    username: appdb
   jpa:
     hibernate:
       ddl-auto: update
