@@ -108,7 +108,7 @@ pipeline {
                     // Image Validattion
                     imageValidation().call()
                     // Calling the method and passing the arguments
-                    dockerDeploy('dev', '5761').call()
+                    dockerDeploy('dev', '5232').call()
                 }
             }
         }
@@ -125,7 +125,7 @@ pipeline {
                     // Image Validattion
                     imageValidation().call()
                     // Calling the method and passing the arguments
-                    dockerDeploy('test', '6761').call()
+                    dockerDeploy('test', '6232').call()
                 }
             }
         }
@@ -147,7 +147,7 @@ pipeline {
                     // Image Validattion
                     imageValidation().call()
                     // Calling the method and passing the arguments
-                    dockerDeploy('stage', '7761').call()
+                    dockerDeploy('stage', '7232').call()
                 }
             }
         }
@@ -169,7 +169,7 @@ pipeline {
                 }
                 script {
                     // Calling the method and passing the arguments
-                    dockerDeploy('prod', '8761').call()
+                    dockerDeploy('prod', '8232').call()
                 }
             }
         }
@@ -247,8 +247,8 @@ def imageValidation(){
 //i27devopsb8/eureka:tagname 
 
 // eureka 
-//container port : 8761
-// dev > 5761:8761
-// test > 6761:8761
-// stage> 7761:8761
-// prod> 8761:8761
+//container port : 8232
+// dev > 5232:8232
+// test > 6232:8232
+// stage> 7232:8232
+// prod> 8232:8232
