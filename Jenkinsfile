@@ -215,7 +215,7 @@ def dockerDeploy(envDeploy, port) {
                 echo "Error Caught : $err"
             }
             // Creating a Container
-            sh "docker run --name ${env.APPLICATION_NAME}-$envDeploy -d -p $port:8761 -t ${env.DOCKER_HUB}/${env.APPLICATION_NAME}:$GIT_COMMIT"
+            sh "docker run --name ${env.APPLICATION_NAME}-$envDeploy -d -p $port:8232 -t ${env.DOCKER_HUB}/${env.APPLICATION_NAME}:$GIT_COMMIT"
         }
 
     }
